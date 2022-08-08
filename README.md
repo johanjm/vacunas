@@ -9,6 +9,10 @@
 
 -La Fake-Api está configurada para ejecutarse en el puerto 5000.
 
+-Se utilizó librerias como Bootstrap y ReactStrap para una buena estética.
+
+-Se utilizó la libreria Cookies para el desarrollo de inicio de sesión y el manejo de datos.
+
 # Inicio del sistema
 
 Para iniciar la aplicación se utiliza "npm start" dentro del directorio donde se encuentren los archivos.
@@ -21,7 +25,7 @@ user: maria
 
 pasword: maria
 
-Por defecto se encuentran creados varios usuarios "empleados":
+Por defecto se encuentran creados varios usuarios "empleados", por ejemplo:
 
 user: JohanHernan
 
@@ -31,11 +35,32 @@ password: JohanHernan
 
 El sistema se encuentra organizado en 5 carpetas: "routes", "pages", "css", "components" "api".
 
+En la carpeta "api" se encuentra el archivo "db.json" que es la base de datos que se utiliza para la Fake-Api.
+
 En la carpeta "routes" se encuentra un único archivo "Routes.js" donde solo se crearán los enrutamientos necesarios para las páginas del sistema.
 
 En la carpeta "pages" se tiene:
 
--El archivo "Login.js" donde se encuentra el sistema de autenticación
+-El archivo "Login.js" donde se encuentra el sistema de autenticación que mediante requerimientos a la Fake-Api valida los datos para permitir el acceso al sistema, identificando si se trata de un admiistrador o un empleado.
+
+-El archivo "Admin.js" es basicamente la página donde se implementan los componentes que permiten agregar nuevos empleados, visualizar los empleados existentes y filtrar los empleados dependiendo los parametros especificados.
+
+-El archivo "Empleado.js" es basicamente la página donde se implementan los componentes que permiten visualizar los datos del empleado y también el componente que permite completar y editar los datos del empleado.
+
+En la caperta "css" se encuentran los archivos "Forms.css", "Login.css" y "Vistas.css" que son unicamente hojas de estilo para realizar una interfás gráfica mas amigable.
+
+En la carpeta "components" se encuentran:
+
+-Archivo "Request.js" es practicamente una librería que está diseñada para facilitar los requerimientos que se requieren hacer a la Fake-Api, aunque esta diseñada para realizar requerimientos a cualquier Api.
+
+-Archivos "CrudApi.js" y "CrudApiE.js", contienen los métodos para y requerimientos necesarios para poder realizar la lectura, creación, actualización y eliminación (CRUD) de los datos, interactuando en tiempo real con la aplicación y la Fake-Api
+
+-Archivos "FormAdmin.js" y "FormEmpleado.js", contienen los formularios que son utlizados y llamados en "CrudApi.js" y "CrudApiE.js" para poder realizar la creación o actualización de los datos.
+
+-Archivos "VistaAdmin.js", es donde se encuentra los métodos para que se pueda visualizar mediante una tabla los datos principales de los empleados y además también el filtrado de información dependiendo de los parámetros requeridos.
+
+-Archivos "VistaEmpleado.js", es donde se encuentra los métodos para que se pueda visualizar todos los datos del empleado.
+
 
 
 
