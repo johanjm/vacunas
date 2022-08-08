@@ -67,7 +67,8 @@ En la carpeta "components" se encuentran:
 - El sistema reconoce perfectamente que usuario ha ingreasado, diferenciando claramente si se trata de un empleado o un administrador.
 - Los dos tipos de usuarios tienen páginas de sesión diferentes.
 - El usuario "administrador" (una vez logueado), puede ver automaticamente todos los empleados registrados y puede filtrar a los empleados en "vacunado/no vacunado" y por el tipo de vacuna que se ha colocado.
-- Al dar de alta o crear a un empleado, se crea automaticamennte un usuario y una contraseña que es la 
+- Al dar de alta o crear a un empleado, se crea automaticamennte un usuario y una contraseña que es la unión de sus dos nombres tanto para el usuario como para la contraseña
+- al dar de alta o crear un empleado, el sistema le asigna automaticamente un id único.
 - Ell usuario "empleado" (una vez logueado), puede vizualizar automáticamente su información personal pero tambien puede agregar y editar la información incompleta.
 - 
 
