@@ -61,6 +61,14 @@ En la carpeta "components" se encuentran:
 
 -Archivos "VistaEmpleado.js", es donde se encuentra los métodos para que se pueda visualizar todos los datos del empleado.
 
+# Funcionalidad del sistema
 
+- Todos los campos de ingreso de datos se encuentran validados dependiendo del dato que se desee ingresar. 
+- El sistema reconoce perfectamente que usuario ha ingreasado, diferenciando claramente si se trata de un empleado o un administrador.
+- Los dos tipos de usuarios tienen páginas de sesión diferentes.
+- El usuario "administrador" (una vez logueado), puede ver automaticamente todos los empleados registrados y puede filtrar a los empleados en "vacunado/no vacunado" y por el tipo de vacuna que se ha colocado.
+- Al dar de alta o crear a un empleado, se crea automaticamennte un usuario y una contraseña que es la 
+- Ell usuario "empleado" (una vez logueado), puede vizualizar automáticamente su información personal pero tambien puede agregar y editar la información incompleta.
+- 
 
 
